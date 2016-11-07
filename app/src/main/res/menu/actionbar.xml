@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_cabin"
+        android:icon="@drawable/seat_icon"
+        android:title="Cabin Control"
+        android:orderInCategory="0"
+        android:showAsAction="always"/>
+
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        android:showAsAction="never"/>
+
+</menu>

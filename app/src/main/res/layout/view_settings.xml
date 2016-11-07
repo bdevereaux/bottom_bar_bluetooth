@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pairing_graphic"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:id="@+id/connect_button"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/pairing_graphic"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/clear_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connect_top"
+            android:text="CONNECT YOUR DEVICE"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connect_bottom"
+            android:textColor="@color/white"
+            android:text="via bluetooth"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:id="@+id/skymiles_login_button"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/connect_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@id/connect_button"
+        android:layout_alignLeft="@id/connect_button"
+        android:gravity="center_horizontal"
+        android:background="@drawable/clear_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_top"
+            android:text="SIGN IN"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_bottom"
+            android:textColor="@color/white"
+            android:text="to your account"
+            android:textSize="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
+

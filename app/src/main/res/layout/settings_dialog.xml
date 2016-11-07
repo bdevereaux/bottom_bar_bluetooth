@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/mediumBlue">
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ip_edit"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="IP Address"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:maxLines="1"
+        android:inputType="phone"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/port_edit"
+        android:layout_below="@id/ip_edit"
+        android:hint="Port"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:maxLines="1"
+        android:inputType="phone"/>
+
+    <RadioGroup
+        android:id="@+id/radioJson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/port_edit">
+
+        <RadioButton
+            android:id="@+id/radioGogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internal"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radioExternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="External"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioJson" />
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<tabs>
+    <item
+        id="@+id/flight_info_item"
+        icon="@drawable/tab_flight"
+        title="Flight" />
+    <item
+        id="@+id/games_item"
+        icon="@drawable/tab_game"
+        title="Games" />
+    <item
+        id="@+id/entertainment_item"
+        icon="@drawable/tab_entertainment"
+        title="Media" />
+    <!--<item
+        id="@+id/cabin_item"
+        icon="@drawable/tab_cabin"
+        title="Cabin" />-->
+    <item
+        id="@+id/settings_item"
+        icon="@drawable/tab_settings"
+        title="Settings" />
+</tabs>

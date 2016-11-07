@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bottom Bar Application</string>
+    <string name="title_activity_splash">Splash Screen</string>
+    <string name="permission_camera_rationale">Camera permissions are necessary to scan for valid QR codes</string>
+    <string name="low_storage_error">Not enough storage space available</string>
+    <string name="no_camera_permission">Camera permission has not been granted</string>
+    <string name="ok">OK</string>
+</resources>

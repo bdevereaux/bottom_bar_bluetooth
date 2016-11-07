@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/flight_info_item"
+        android:icon="@drawable/tab_flight"
+        android:title="Flight" />
+    <item
+        android:id="@+id/games_item"
+        android:icon="@drawable/tab_game"
+        android:title="Games" />
+    <item
+        android:id="@+id/entertainment_item"
+        android:icon="@drawable/tab_entertainment"
+        android:title="Media" />
+    <!--<item
+        android:id="@+id/cabin_item"
+        android:icon="@drawable/tab_cabin"
+        android:title="Cabin" />-->
+    <item
+        android:id="@+id/settings_item"
+        android:icon="@drawable/tab_settings"
+        android:title="Settings" />
+</menu>

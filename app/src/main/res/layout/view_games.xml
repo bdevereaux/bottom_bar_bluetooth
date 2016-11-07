@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/angrybirds_layout"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/angrybirds_text"
+                    android:textColor="@color/white"
+                    android:text="Angry Birds 2"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/angrybirds_image"
+                    android:layout_below="@id/angrybirds_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/angrybirdsmarquee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/angrybirds_image"
+                    android:layout_alignTop="@id/angrybirds_image"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="They're back! They're Angry! Pork BEWARE!"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/csr_layout"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/csr_text"
+                    android:textColor="@color/white"
+                    android:text="CSR Racing 2"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/csr_image"
+                    android:layout_below="@id/csr_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/csrmarquee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/csr_image"
+                    android:layout_alignTop="@id/csr_image"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Take to the streets and race your car against a variety of cars and racers. Upgrade your car for better performance."/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/slither_layout"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/slither_text"
+                    android:textColor="@color/white"
+                    android:text="Slither.IO"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/slither_image"
+                    android:layout_below="@id/slither_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/slithermarquee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/slither_image"
+                    android:layout_alignTop="@id/slither_image"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Eat nutritious food. Grow big and strong. Consume your opponents!"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sudoku_layout"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sudoku_text"
+                    android:textColor="@color/white"
+                    android:text="Sudoku"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sudoku_image"
+                    android:layout_below="@id/sudoku_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/sudokumarquee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sudoku_image"
+                    android:layout_alignTop="@id/sudoku_image"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="How fast can you complete the sudoku puzzle? Play from easy to extreme difficulty levels. Remake of a classic game!"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trafficrider_layout"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trafficrider_text"
+                    android:textColor="@color/white"
+                    android:text="Traffic Rider"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trafficrider_image"
+                    android:layout_below="@id/trafficrider_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/trafficridermarquee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/trafficrider_image"
+                    android:layout_alignTop="@id/trafficrider_image"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Ride through traffic as fast as you can. Be careful! Accidents are everywhere! How long can you last?"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trexels_layout"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trexels_text"
+                    android:textColor="@color/white"
+                    android:text="Trexels"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trexels_image"
+                    android:layout_below="@id/trexels_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/trexelsmarquee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/trexels_image"
+                    android:layout_alignTop="@id/trexels_image"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Take the helm in this pixelated tribute to Star Trek! Time and space boundaries have been broken! Expect to meet anyone!"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

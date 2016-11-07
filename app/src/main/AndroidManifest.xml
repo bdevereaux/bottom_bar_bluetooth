@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blackboardtheory.bottombarapplication">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.blackboardtheory.bottombarapplication.activities.SignInActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.blackboardtheory.bottombarapplication.activities.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.blackboardtheory.bottombarapplication.activities.BarcodeCaptureActivity"
+            android:label="Read Barcode"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.blackboardtheory.bottombarapplication.services.BluetoothService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.blackboardtheory.bottombarapplication.activities.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+    </application>
+
+</manifest>

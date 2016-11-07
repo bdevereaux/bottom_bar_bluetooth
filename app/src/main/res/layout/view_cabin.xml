@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cabin_control_text_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="15dp"
+        android:text="Cabin Control"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"/>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:id="@+id/light_control_button"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/clear_button"><!--
+        android:layout_below="@id/cabin_control_text_view"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOGGLE CABIN LIGHT"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=" "
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:id="@+id/fan_control_button"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/light_control_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@id/light_control_button"
+        android:layout_alignLeft="@id/light_control_button"
+        android:gravity="center_horizontal"
+        android:background="@drawable/clear_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOGGLE CABIN FAN"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=" "
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:id="@+id/call_attendant_button"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/fan_control_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@id/light_control_button"
+        android:layout_alignLeft="@id/light_control_button"
+        android:gravity="center_horizontal"
+        android:background="@drawable/clear_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL ATTENDANT"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=" "
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.blackboardtheory.bottombarapplication.activities.MainActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_container">
+
+        </FrameLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/cabin_actions_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        fab:menu_openDirection="down"
+        fab:menu_icon="@drawable/plus_button"
+        fab:menu_colorNormal="@color/lightBlue"
+        fab:menu_colorPressed="#50E743"
+        fab:menu_colorRipple="#99FFFFFF"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/action_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_cabin"
+            app:fab_label="Toggle Cabin Light"
+            fab:fab_colorNormal="#ddddff"
+            fab:fab_colorPressed="@color/white"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/action_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fan"
+            app:fab_label="Toggle Cabin Fan"
+            fab:fab_colorNormal="#ddddff"
+            fab:fab_colorPressed="@color/white"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/action_attendant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attendant"
+            app:fab_label="Call Flight Attendant"
+            fab:fab_colorNormal="#ddddff"
+            fab:fab_colorPressed="@color/white"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/action_restroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restroom"
+            app:fab_label="View Lavatory Availability"
+            fab:fab_colorNormal="#ddddff"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_colorRipple="@color/darkBlue"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.github.fabtransitionactivity.SheetLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        app:ft_container_gravity="center"
+        app:ft_color="@color/darkBlue"
+        android:elevation="2dp"/>
+</RelativeLayout>
